@@ -1,0 +1,354 @@
+<html><head><base href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047123398">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EtatConnecT - Thermostats Connectés Obligatoires | Installation Gratuite</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  :root {
+    --primary-color: #007BFF;
+    --secondary-color: #28A745;
+    --light-bg: #F8F9FA;
+    --dark-bg: #343A40;
+    --text-color: #333;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-bg);
+  }
+  
+  header {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--light-bg);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  .hero {
+    background: url('https://images.unsplash.com/photo-1556020685-ae41abfc9365?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 40px;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #218838;
+  }
+  
+  .content-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .content-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    flex-basis: calc(33% - 20px);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .feature i {
+    font-size: 3em;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+  }
+  
+  .official-source {
+    background-color: var(--light-bg);
+    border-left: 5px solid var(--primary-color);
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  .official-source h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+  }
+  
+  .cta-form {
+    background-color: var(--light-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .cta-form h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .cta-form input[type="tel"],
+  .cta-form input[type="email"],
+  .cta-form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .cta-form button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .countdown {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  footer {
+    background-color: var(--dark-bg);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    nav ul {
+      margin-top: 20px;
+    }
+    
+    .feature {
+      flex-basis: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="#" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" fill="#28A745"/>
+          <path d="M50 10 L90 50 L50 90 L10 50 Z" fill="#007BFF"/>
+          <circle cx="50" cy="50" r="20" fill="white"/>
+          <rect x="45" y="20" width="10" height="60" fill="white"/>
+        </svg>
+        <span class="logo-text">EtatConnecT</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#benefits">Avantages</a></li>
+          <li><a href="#official">Législation</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h1>Thermostats Connectés Obligatoires</h1>
+    <p>Conformez-vous à la loi N°2023-444 gratuitement avant le 31 décembre 2024</p>
+    <a href="#contact" class="cta-button">Obtenez votre installation gratuite</a>
+  </div>
+
+  <div class="container">
+    <section id="about" class="content-section">
+      <h2>Préparez-vous pour 2027</h2>
+      <p>La loi N°2023-444 impose l'installation de thermostats connectés dans tous les foyers français d'ici le 1er janvier 2027. EtatConnecT vous offre une solution clé en main pour vous mettre en conformité, sans frais jusqu'au 31 décembre 2024.</p>
+    </section>
+
+    <section id="benefits" class="content-section">
+      <h2>Pourquoi choisir EtatConnecT ?</h2>
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-euro-sign"></i>
+          <h3>Installation Gratuite</h3>
+          <p>Profitez d'une installation et d'un équipement gratuits jusqu'au 31/12/2024</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-check-circle"></i>
+          <h3>Conformité Garantie</h3>
+          <p>Assurez-vous d'être en règle avec la nouvelle législation</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-leaf"></i>
+          <h3>Économies d'Énergie</h3>
+          <p>Réduisez votre consommation et vos factures énergétiques</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="official" class="content-section">
+      <h2>Législation Officielle</h2>
+      <div class="official-source">
+        <h3>Loi N°2023-444</h3>
+        <p>Cette loi concerne l'accélération de la production d'énergies renouvelables. Consultez le texte intégral sur le site officiel du gouvernement :</p>
+        <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047123398" target="_blank">Loi N°2023-444 sur Légifrance</a>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section">
+      <div class="cta-form">
+        <h2>Réservez votre Installation Gratuite</h2>
+        <p>Ne payez pas 500€ plus tard. Profitez de notre offre limitée dans le temps !</p>
+        <form id="callbackForm">
+          <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
+          <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
+          <input type="text" id="zipcode" name="zipcode" placeholder="Votre code postal" required>
+          <button type="submit">Être rappelé rapidement</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="countdown">
+      <p>Temps restant pour bénéficier de l'offre gratuite :</p>
+      <div id="timer"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 EtatConnecT. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    document.getElementById('callbackForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var phone = document.getElementById('phone').value;
+      var email = document.getElementById('email').value;
+      var zipcode = document.getElementById('zipcode').value;
+      alert('Merci ! Un conseiller EtatConnecT vous contactera très prochainement au ' + phone + ' ou à l\'adresse ' + email + ' pour planifier l'installation gratuite de votre thermostat connecté dans la zone ' + zipcode + '.');
+    });
+
+    // Compte à rebours
+    var countDownDate = new Date("Dec 31, 2024 23:59:59").getTime();
+
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("timer").innerHTML = days + "j " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "OFFRE EXPIRÉE";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
